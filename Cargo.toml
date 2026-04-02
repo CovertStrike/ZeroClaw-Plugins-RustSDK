@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 description = "Ergonomic SDK for building ZeroClaw WASM plugins"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/CovertStrike/ZeroClaw-Plugins-RustSDK"
+authors = ["CovertStrike"]
 
 [lib]
 crate-type = ["cdylib"]

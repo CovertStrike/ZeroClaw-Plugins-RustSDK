@@ -2,8 +2,9 @@
 name = "zeroclaw-plugin-sdk"
 version = "0.1.0"
 description = "Ergonomic SDK for building ZeroClaw WASM plugins"
-authors = ["Biztactix"]
+authors = ["CovertStrike"]
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/CovertStrike/ZeroClaw-Plugins-RustSDK"
 
 [plugin.wasm]
 file = "target/wasm32-unknown-unknown/release/zeroclaw_plugin_sdk.wasm"
