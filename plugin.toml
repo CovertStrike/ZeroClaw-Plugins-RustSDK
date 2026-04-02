@@ -1,0 +1,24 @@
+[plugin]
+name = "zeroclaw-plugin-sdk"
+version = "0.1.0"
+description = "Ergonomic SDK for building ZeroClaw WASM plugins"
+authors = ["Biztactix"]
+license = "MIT OR Apache-2.0"
+
+[plugin.wasm]
+file = "target/wasm32-unknown-unknown/release/zeroclaw_plugin_sdk.wasm"
+
+[plugin.exports]
+on_message = { description = "Handle incoming messages" }
+on_load = { description = "Called when plugin is loaded" }
+
+[plugin.host_functions]
+zeroclaw_tool_call = { description = "Call a tool by name" }
+zeroclaw_send_message = { description = "Send a message to a channel" }
+zeroclaw_get_channels = { description = "Get available channels" }
+zeroclaw_memory_store = { description = "Store a memory" }
+zeroclaw_memory_recall = { description = "Recall memories" }
+zeroclaw_memory_forget = { description = "Forget a memory" }
+context_session = { description = "Get session context" }
+context_user_identity = { description = "Get user identity" }
+context_agent_config = { description = "Get agent config" }
